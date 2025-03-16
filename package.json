@@ -1,0 +1,43 @@
+{
+  "name": "@missionsquad/common",
+  "version": "1.0.0",
+  "description": "MissionSquad commonly used utilities and types",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "build": "rm -rf lib && tsc -b",
+    "test": "jest --config jest.config.json",
+    "format": "git ls-files | grep -E \"\\.(jsx?|tsx?|css|md|ya?ml|json)$\" | xargs prettier --write",
+    "prepack": "yarn build"
+  },
+  "license": "Apache-2.0",
+  "repository": "missionsquad/common",
+  "author": {
+    "name": "jayson jacobs",
+    "email": "public@missionsquad.ai"
+  },
+  "bugs": "https://github.com/missionsquad/common/issues",
+  "homepage": "https://github.com/missionsquad/common",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "nanoid": "3.3.10"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-flow": "^7.24.7",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
