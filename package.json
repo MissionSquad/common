@@ -1,6 +1,6 @@
 {
   "name": "@missionsquad/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MissionSquad commonly used utilities and types",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,9 +19,6 @@
   },
   "bugs": "https://github.com/missionsquad/common/issues",
   "homepage": "https://github.com/missionsquad/common",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
     "nanoid": "3.3.10"
   },

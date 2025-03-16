@@ -78,16 +78,7 @@ graph LR
 
 ## Installation
 
-This package is published to GitHub Packages. To install it, you'll need to configure npm to use the GitHub registry for the @missionsquad scope.
-
-1. Create or edit your `.npmrc` file:
-
-```
-@missionsquad:registry=https://npm.pkg.github.com/
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
-```
-
-2. Install the package:
+Install the package using npm or yarn:
 
 ```bash
 npm install @missionsquad/common
