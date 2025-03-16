@@ -151,10 +151,7 @@ export interface Content {
 /**
  * Extracts and cleans the main content from HTML
  */
-export async function extractCleanContent(html: string): Promise<Content> {
-  // Get the HTML content
-  // let html = await page.content()
-
+export function extractCleanContent(html: string): Content {
   // Remove scripts, styles, and SVGs
   html = removeScripts(html)
   html = removeStyles(html)
