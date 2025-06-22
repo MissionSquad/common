@@ -1,6 +1,6 @@
 {
   "name": "@missionsquad/common",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "MissionSquad commonly used utilities and types",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

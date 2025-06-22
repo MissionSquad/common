@@ -17,10 +17,11 @@ export type LogLevel = 'debug' | 'info' | 'warn' | 'error'
  *
  * @returns {void}
  */
-export function log({ level, msg, error }: { level: string, msg: string, error?: any }): void {
-  console.log(`[${new Date().toISOString()}] [${level.toUpperCase()}] ${msg}`)
+export function log({ level, msg, error }: { level: string, msg: string, error?: any }, useConsoleError: boolean = false): void {
+  const logFunction = useConsoleError ? console.error : console.log
+  logFunction(`[${new Date().toISOString()}] [${level.toUpperCase()}] ${msg}`)
   if (error != null) {
-    console.log(error)
+    logFunction(error)
   }
 }
 
